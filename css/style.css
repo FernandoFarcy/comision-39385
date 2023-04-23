@@ -31,6 +31,7 @@ font-family: 'Roboto', sans-serif; */
 .inicio{
     width: 100%; 
     height: 100vh;
+    /* display: flex; */
     text-decoration: none;
     list-style: none;
     background-color: var(--rosa3);
@@ -66,16 +67,14 @@ font-family: 'Roboto', sans-serif; */
     align-self: center; */
 }
 
-
 .header ul{
     grid-area: headerder;
-    height: 170px;
     display: flex;
     list-style:none;
     flex-direction: row;
-    justify-content:end;  
-    align-items:end;
-    padding-right: 20px;
+    justify-content:right;
+    margin-top: 150px;
+    padding-right: 30px;
     gap: 20PX;
 }
 
@@ -90,6 +89,7 @@ font-family: 'Roboto', sans-serif; */
 
 
 .main-index{
+
     grid-area: mmindex;
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -181,8 +181,6 @@ font-family: 'Roboto', sans-serif; */
     grid-area: f1;
     padding-bottom: 10px;
     padding-left: 90px;
-
-
 }
 
 .footer-footer1 figure{
@@ -196,7 +194,6 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .footer-footer2 h3{
-    /* padding-bottom: 0px; */
     padding-left: 170px;
 }
 
@@ -505,14 +502,129 @@ font-family: 'Roboto', sans-serif; */
 /*-------------------------------- @ MEDIA ------------*/
 /******************** 1024   */
 @media(max-width:1024px){
-    
+    .header{
+        grid-area: cabecera;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "headerarriba"
+        "headerabajo"
+        ;
+        gap: 5px;
+    }
+
+    .header  figure{
+        grid-area: headerarriba;
+        justify-self:left;
+    }
     .header ul{
+        grid-area: headerabajo;
+        list-style:none;
+        margin-top: 40px;
         justify-content:left;
-        padding-left: 200px;
+        padding-left: 30px;
+        gap: 20PX;
     }
-    .main-index-uno h1{
-        font-size: 25px;
+    .header li a{
+        padding: 5px 5px 5px 5px ;
+        font-weight: bold;
+        font-size: 20px;
     }
+    
+    .main-index{
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    "fer2 fer2 fer2 fer1 fer1"
+    "fer2 fer2 fer2 fer3 fer3"
+    "fer2 fer2 fer2 fer3 fer3"
+    "fer4 fer4 fer4 fer4 fer4"
+    "fer5 fer5 fer5 fer5 fer5"
+    "fer5 fer5 fer5 fer5 fer5"
+    "fer6 fer6 fer6 fer6 fer6"
+    ;
+    }    
+
+    .main-index-uno{
+        justify-self:left;
+        align-self: center;
+        text-align: left;
+    }
+
+    .main-index-dos{
+        grid-area: fer2;
+        padding: 20px;
+        justify-self: center;
+        align-self: center;
+        border-radius: 50%;
+    }
+    
+
+    .main-index-tres{
+        grid-area: fer3;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        width: 450px;
+        padding-right: 20px;
+    }
+    .main-index-cuatro{
+        grid-area: fer4;
+        text-align: center;
+        padding-left: 10px;
+        font-size: 18px;
+        font-family: 'Lobster', cursive;
+        color:#F38BA0;
+    }
+    .main-index-cinco img{
+        grid-area: fer5;
+        width: 1000px;
+        height: 300px;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        border: 2px solid #FFBCBC;
+
+    }
+    .main-index-seis{
+        grid-area: fer6;
+        justify-self: center;
+        align-self:self-start;
+        text-align: center;
+        font-size: 18px;
+        width: 1000px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .footer-footer1{
+        justify-content: center;
+    }
+
+    .footer-footer2{
+        justify-content: center;
+    }
+
+    .footer-footer2 h3{
+        padding-left: 120px;
+    }
+    
+
+    .footer-footer3{
+        display:block;
+        justify-content: center;
+    }
+    .footer-footer3 h3{
+        padding-bottom: 10px;
+        padding-left: 50px;
+        justify-content: center;
+    }
+    
+
 }
 /******************** 768   */
 @media(max-width:768px){
