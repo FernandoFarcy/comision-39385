@@ -268,10 +268,8 @@ font-family: 'Roboto', sans-serif; */
     align-items: center;
 }
 .main-tratamientos2 img{
-    border-radius: 10%;
-    width: 300px;
-    height: 300px;
-    border: 2px solid #FFBCBC;
+    width: auto;
+    height: auto;
 }
 
 .main-tratamientos3{
@@ -281,10 +279,8 @@ font-family: 'Roboto', sans-serif; */
     align-items: center;
 }
 .main-tratamientos3 img{
-    border-radius: 10%;
-    width: 300px;
-    height: 300px;
-    border: 2px solid #FFBCBC;
+    width: auto;
+    height: auto;
 }
 
 .main-tratamientos4{
@@ -294,10 +290,8 @@ font-family: 'Roboto', sans-serif; */
     align-items: center;
 }
 .main-tratamientos4 img{
-    border-radius: 10%;
-    width: 300px;
-    height: 300px;
-    border: 2px solid #FFBCBC;
+    width: auto;
+    height: auto;
 }
 .main-tratamientos5{
     grid-area: fer5;
@@ -306,10 +300,8 @@ font-family: 'Roboto', sans-serif; */
     align-items: center;
 }
 .main-tratamientos5 img{
-    border-radius: 10%;
-    width: 300px;
-    height: 300px;
-    border: 2px solid #FFBCBC;
+    width: auto;
+    height: auto;
 }
 .main-tratamientos6{
     grid-area: fer6;
@@ -318,10 +310,8 @@ font-family: 'Roboto', sans-serif; */
     align-items: center;
 }
 .main-tratamientos6 img{
-    border-radius: 10%;
-    width: 300px;
-    height: 300px;
-    border: 2px solid #FFBCBC;
+    width: auto;
+    height: auto;
 }
 .main-tratamientos7{
     grid-area: fer7;
@@ -330,10 +320,9 @@ font-family: 'Roboto', sans-serif; */
     align-items: center;
 }
 .main-tratamientos7 img{
-    border-radius: 10%;
-    width: 300px;
-    height: 300px;
-    border: 2px solid #5b0303;
+    width: auto;
+    height: auto;
+    /* border: 2px solid #5b0303; */
 }
 
 .main-tratamientos figcaption{
@@ -498,8 +487,8 @@ font-family: 'Roboto', sans-serif; */
 
 
 
-/*-------------------------------- @ MEDIA ------------*/
-/******************** 1024   */
+/*---------------------------------------------------- @ MEDIA ------------*/
+/*---------------------------------------------- 1024   */
 @media(max-width:1024px){
     .header{
         grid-area: cabecera;
@@ -625,7 +614,7 @@ font-family: 'Roboto', sans-serif; */
 
 
 }
-/******************** 768   */
+/*-------------------------------------------------  768   */
 @media(max-width:768px){
     .footer-footer1 figure img{
         width: 60px;
@@ -654,13 +643,8 @@ font-family: 'Roboto', sans-serif; */
 }
 
 
-/******************** 425   */
+/*------------------------------------   425   */
 @media(max-width:425px){
-
-}
-
-/******************** 375   */
-@media(max-width:375px){
     .header figure{
         grid-area: headerarriba;
         justify-self:center;
@@ -763,255 +747,5 @@ font-family: 'Roboto', sans-serif; */
 
 
 }
-
-
-/******************** 320   */
-@media(max-width:320px){
-    .header figure{
-        grid-area: headerarriba;
-        justify-self:center;
-    }
-    .header ul{
-        grid-area: headerabajo;
-        list-style:none;
-        margin-top: 40px;
-        justify-content:center;
-        gap: 20PX;
-    }
-    .header li a{
-        padding: 5px 5px 5px 5px ;
-        font-weight: bold;
-        font-size: 20px;
-    }
-
-
-
-    .main-index{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(10, 1fr);
-        grid-template-areas:
-        "fer1"
-        "fer2"
-        "fer2"
-        "fer3"
-        "fer3"
-        "fer4"
-        "fer5"
-        "fer5"
-        "fer6"
-        "fer6"
-        ;
-        }
-        .main-index-uno{
-            grid-area: fer1;
-            justify-self: center;
-            align-self: center;
-            font-size: 20px;
-            font-family: 'Lobster', cursive;
-            color:#F38BA0;
-        }
-        
-
-
-        .main-index-dos{
-            grid-area: fer2;
-            padding: 20px;
-            justify-self: center;
-            align-self: center;
-            border-radius: 50%;
-
-        }
-
-        .main-index-dos img{
-            width: 350px;
-            height: 500px;
-        }
-
-
-        .main-index-tres{
-            grid-area: fer3;
-            justify-self: center;
-            align-self: center;
-            text-align: center;
-            font-size: 16px;
-            font-family: 'Poppins', sans-serif;
-            width: 360px;
-            padding-right: 20px;
-        }
-        .main-index-cuatro{
-            grid-area: fer4;
-            text-align: center;
-            padding-left: 10px;
-            font-size: 18px;
-            font-family: 'Lobster', cursive;
-            color:#F38BA0;
-        }
-        .main-index-cinco img{
-            grid-area: fer5;
-            width: 360px;
-            height: 200px;
-            justify-self: center;
-            align-self: center;
-            text-align: center;
-            border: 2px solid #FFBCBC;
-
-        }
-        .main-index-seis{
-            grid-area: fer6;
-            justify-self: center;
-            align-self:self-start;
-            text-align: center;
-            font-size: 18px;
-            width: 360px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-
-
-        /*------------------------ COMIENZA  MEDIA QUERI DE TRATAMIENTOS  -------- */
-        .main-tratamientos{
-            display:grid;
-            grid-template-columns: 1fr ;
-            grid-template-rows: repeat(15, 1fr);
-            grid-template-areas:
-            "fer1"
-            "fer2"
-            "fer2"
-            "fer3"
-            "fer3"
-            "fer4"
-            "fer4"
-            "fer5"
-            "fer5"
-            "fer6"
-            "fer6"
-            "fer7"
-            "fer7"
-            "fer8"
-            "fer8"
-            "fer9"
-            "fer10"
-            ;
-            gap: 5px;
-            background-color: var(--rosa3);
-        
-        }
-        
-
-        .main-tratamientos1{
-            grid-area: fer1;
-            justify-self: center;
-            align-self: center;
-            font-size: 40px;
-            font-family: 'Delicious Handrawn', cursive;
-            color:#F38BA0;
-        
-        }
-        .main-tratamientos2{
-            grid-area: fer2;
-            padding-left: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .main-tratamientos2 img{
-            border-radius: 10%;
-            width: 300px;
-            height: 300px;
-            border: 2px solid #FFBCBC;
-        }
-        
-        .main-tratamientos3{
-            grid-area: fer3;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .main-tratamientos3 img{
-            border-radius: 10%;
-            width: 300px;
-            height: 300px;
-            border: 2px solid #FFBCBC;
-        }
-        
-        .main-tratamientos4{
-            grid-area: fer4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .main-tratamientos4 img{
-            border-radius: 10%;
-            width: 300px;
-            height: 300px;
-            border: 2px solid #FFBCBC;
-        }
-        .main-tratamientos5{
-            grid-area: fer5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .main-tratamientos5 img{
-            border-radius: 10%;
-            width: 300px;
-            height: 300px;
-            border: 2px solid #FFBCBC;
-        }
-        .main-tratamientos6{
-            grid-area: fer6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .main-tratamientos6 img{
-            border-radius: 10%;
-            width: 300px;
-            height: 300px;
-            border: 2px solid #FFBCBC;
-        }
-        .main-tratamientos7{
-            grid-area: fer7;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .main-tratamientos7 img{
-            border-radius: 10%;
-            width: 300px;
-            height: 300px;
-            border: 2px solid #5b0303;
-        }
-        
-        .main-tratamientos figcaption{
-            display:flex;
-            justify-content: center;
-        }
-        
-        .main-tratamientos8{
-            grid-area: fer8;
-            justify-self: center;
-            align-self:flex-end;
-            font-size: 20px;
-            font-family: 'Delicious Handrawn', cursive;
-            color:#F38BA0;
-        }
-        .main-tratamientos9{
-            grid-area: fer9;
-            width: 310px;
-            height: 50px;
-            border: 2px solid #FFBCBC;
-            display: flex;
-            align-self: center;
-            justify-self: center;
-        }
-        
-        
-        
-
-}
-
-
 
 
