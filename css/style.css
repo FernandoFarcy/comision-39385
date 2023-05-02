@@ -142,6 +142,13 @@ font-family: 'Roboto', sans-serif; */
     width: 550px;
 }
 
+.main-index-tres p::first-letter{
+    font-size: 40px;
+    color:var(--rosa1);
+}
+
+
+
 .main-index-cuatro{
     grid-area: fer4;
     align-self:self-end;
@@ -168,15 +175,21 @@ font-family: 'Roboto', sans-serif; */
     width: 1250px;
 }
 
-
+.main-index-seis p::first-letter{
+    font-size: 40px;
+    color:var(--rosa1);
+}
 
 
 .footer{
     grid-area: pie;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
     grid-template-areas:
     "f1 f2 f3"
+
+
     ;
     background-color: var(--rosa2);
     padding-top: 20px;
