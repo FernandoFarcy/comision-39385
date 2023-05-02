@@ -892,14 +892,15 @@ font-family: 'Roboto', sans-serif; */
         }        
 
         .footer-footer1 h3{
-            grid-area: f1;
+            display:none;
+            /* grid-area: f1;
             padding-bottom: 10px;
-            padding-left: 90px;
+            padding-left: 90px; */
         }
         
         .footer-footer1 figure{
             display: flex;
-        justify-items: center;
+            justify-items: center;
         
         }
         .footer-footer1 figure img{
@@ -981,6 +982,7 @@ font-family: 'Roboto', sans-serif; */
         }
         .footer-footer3 figure figcaption {
             font-size: 30px;
+            padding-right: 10px;
         }
 
         .footer-footer3 figure figcaption p{
@@ -1206,4 +1208,9 @@ font-family: 'Roboto', sans-serif; */
 
 
     
+}
+
+/*------------------------------------   320   */
+@media(max-width:320px){
+
 }
