@@ -41,11 +41,12 @@ font-family: 'Roboto', sans-serif; */
 .contenedor{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 180px 1fr auto;
+    grid-template-rows: 180px 1fr auto 5%;
     grid-template-areas:
     "cabecera"
     "mmindex"
-    "pie";
+    "pie"
+    "suela";
  }
 
 .header{
@@ -105,7 +106,7 @@ font-family: 'Roboto', sans-serif; */
     "fer2 fer2 fer2 fer1 fer1 fer1"
     "fer2 fer2 fer2 fer3 fer3 fer3"
     "fer2 fer2 fer2 fer3 fer3 fer3"
-    "fer4 fer4 fer4 fer4 fer4 fer4"
+    "fer4 fer4 x x x x"
     "fer5 fer5 fer5 fer5 fer5 fer5"
     "fer5 fer5 fer5 fer5 fer5 fer5"
     "fer6 fer6 fer6 fer6 fer6 fer6"
@@ -185,12 +186,12 @@ font-family: 'Roboto', sans-serif; */
     grid-area: pie;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
+    grid-template-rows: 80% 20%;
     grid-template-areas:
     "f1 f2 f3"
-
-
+    "f4 f4 f4"
     ;
+    gap: 3px;
     background-color: var(--rosa2);
     padding-top: 20px;
     padding-left: 20px;
@@ -222,6 +223,7 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .footer-footer2 h3{
+    grid-area: f2;
     padding-left: 170px;
 }
 
@@ -233,6 +235,7 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .footer-footer3 {
+    grid-area: f3;
     display: flex;
     flex-direction:column;
 }
@@ -257,6 +260,15 @@ font-family: 'Roboto', sans-serif; */
     letter-spacing: 2px;
 }
 
+
+.suelafebo h6{
+    grid-area: suela;
+    text-align: center;
+    flex-direction: row;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color:var(--gris)
+}
 
 
 
