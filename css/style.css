@@ -510,9 +510,10 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .main-comollegar-h{
+    margin-top: 10px;
     grid-area: fer3;
 
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 
