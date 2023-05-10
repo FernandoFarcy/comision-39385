@@ -204,6 +204,7 @@ font-family: 'Roboto', sans-serif; */
     grid-area: f1;
     padding-bottom: 10px;
     padding-left: 90px;
+
 }
 
 .footer-footer1 figure{
@@ -477,11 +478,16 @@ font-family: 'Roboto', sans-serif; */
 
 /******************** CONTACTOS  */
 
+
+
+
+
 .main-contacto{
     display:grid;
     grid-template-columns: repeat(4, 1fr) ;
-    grid-template-rows:  5% 1fr 5% 1fr;
+    grid-template-rows: 10% 2% 1fr 5% 1fr;
     grid-template-areas:
+    "fer5 fer5 fer5 fer5"
     "fer1 fer1 fer1 fer1"
     "fer2 fer2 fer2 fer2"
     "fer3 fer3 fer3 fer3"
@@ -491,8 +497,18 @@ font-family: 'Roboto', sans-serif; */
     background-color: var(--rosa3);
 }
 
+
+.main-telefonosRedes{
+    grid-area: fer5;
+    justify-self: center;
+    align-self:flex-end;
+
+}
+
 .main-formulario-h{
     grid-area: fer1;
+    justify-self: center;
+    align-items: center;
 
 }
 
@@ -505,8 +521,17 @@ font-family: 'Roboto', sans-serif; */
     /* height: 900px; */
     font-size: 30px;
     font-family: 'Delicious Handrawn', cursive;
-    color:#F38BA0;
+    color: var(--rosa1);
 
+    
+}
+
+.main-formulario fieldset{
+    background-color: var(--rosa2);
+    border-color: var(--rosa1);
+    color:var(--gris);
+
+    
 }
 
 .centrarFormulario{
@@ -514,7 +539,10 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .main-comollegar-h{
+    text-align: center;
+    align-self:end;
     grid-area: fer3;
+    color:var(--gris)
 }
 
 
@@ -638,12 +666,17 @@ font-family: 'Roboto', sans-serif; */
         justify-content: center;
     }
 
+    .footer-footer1 h3{
+
+    }
+
     .footer-footer2{
         justify-content: center;
     }
 
     .footer-footer2 h3{
         padding-left: 120px;
+        
     }
 
 
@@ -655,6 +688,7 @@ font-family: 'Roboto', sans-serif; */
         padding-bottom: 10px;
         padding-left: 50px;
         justify-content: center;
+
     }
 
 
