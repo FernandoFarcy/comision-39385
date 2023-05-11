@@ -465,7 +465,7 @@ font-family: 'Roboto', sans-serif; */
 
 .main-tratamientosTodos4{
     grid-area: fer4;
-    width: 900px;
+    width: 310px;
     height: 400px;
     border: 2px solid #FFBCBC;
     display: flex;
@@ -473,7 +473,10 @@ font-family: 'Roboto', sans-serif; */
 
 }
 
-
+.tratamientoTextoCard{
+    width: 44rem;
+    text-align: center;
+}
 
 
 /******************** CONTACTOS  */
@@ -746,7 +749,7 @@ font-family: 'Roboto', sans-serif; */
             width: 36rem;
         }
         .tratamientos-card-text{
-            width: 34rem;
+            width: 24rem;
         }
 
 
@@ -825,6 +828,14 @@ font-family: 'Roboto', sans-serif; */
             text-align: center;
             font-size: 22px;
         }
+
+
+        .tratamientoTextoCard{
+            width: 34rem;
+            text-align: center;
+        }
+        
+
 
 /*------------------------------------   425   */
 @media(max-width:425px){
@@ -1083,6 +1094,11 @@ font-family: 'Roboto', sans-serif; */
             width: 22rem;
         }
 
+        .tratamientoTextoCard{
+            width: 22rem;
+            text-align: center;
+        }
+        
 
 
         .main-tratamientos1{
@@ -1178,7 +1194,10 @@ font-family: 'Roboto', sans-serif; */
             width: 28rem;
         }
 
-
+        .tratamientoTextoCard{
+            width: 26rem;
+            text-align: center;
+        }
 
         .main-tratamientos{
             display:grid;
@@ -1306,5 +1325,11 @@ font-family: 'Roboto', sans-serif; */
         text-align: center;
         font-size: 16px;
     }
+
+    .tratamientoTextoCard{
+        width: 25rem;
+        text-align: center;
+    }
+
 
 }
