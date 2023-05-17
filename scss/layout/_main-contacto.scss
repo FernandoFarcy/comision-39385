@@ -1,0 +1,72 @@
+.main-contacto{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: 10% 2% 1fr 5% 1fr;
+    grid-template-areas:
+    "fer5 fer5 fer5 fer5"
+    "fer1 fer1 fer1 fer1"
+    "fer2 fer2 fer2 fer2"
+    "fer3 fer3 fer3 fer3"
+    "fer4 fer4 fer4 fer4"
+    ;
+    gap: 5px;
+    background-color: $colHeader;
+}
+
+
+.main-telefonosRedes{
+    grid-area: fer5;
+    justify-self: center;
+    align-self:flex-end;
+
+}
+
+.main-formulario-h{
+    grid-area: fer1;
+    justify-self: center;
+    align-items: center;
+
+}
+
+.main-formulario{
+    grid-area: fer2;
+    justify-self: center;
+    align-self: center;
+    width: 400px;
+    height: auto;
+    /* height: 900px; */
+    font-size: 30px;
+    font-family: 'Delicious Handrawn', cursive;
+    color: $colVarios;
+
+    
+}
+
+.main-formulario fieldset{
+    background-color: $colFooter;
+    border-color:$colVarios;
+    color: $coLetra1;
+
+    
+}
+
+.centrarFormulario{
+    text-align: center;
+}
+
+.main-comollegar-h{
+    text-align: center;
+    align-self:end;
+    grid-area: fer3;
+    color: $coLetra1
+}
+
+
+
+.main-comollegar{
+    grid-area: fer4;
+    width: auto;
+    margin: 10px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}

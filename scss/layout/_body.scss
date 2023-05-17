@@ -1,0 +1,13 @@
+.inicio {
+	width: 100%;
+	height: auto;
+	text-decoration: none;
+	list-style: none;
+	background-color: $colHeader;
+}
+.contenedor {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 180px 1fr auto 1%;
+	grid-template-areas: "cabecera" "mmindex" "pie" "suela";
+}

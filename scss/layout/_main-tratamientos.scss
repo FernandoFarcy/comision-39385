@@ -1,0 +1,115 @@
+.tratamientos-card {
+	width: 46rem;
+}
+.tratamientos-card-text {
+	width: 46rem;
+}
+.main-tratamientos {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	grid-template-areas: "fer1 fer1 fer1 fer1 fer1 fer1" "fer2 fer2 fer3 fer3 fer4 fer4" "fer2 fer2 fer3 fer3 fer4 fer4" "fer5 fer5 fer6 fer6 fer7 fer7" "fer5 fer5 fer6 fer6 fer7 fer7" "fer8 fer8 fer8 fer8 fer8 fer8" "fer9 fer9 fer9 fer9 fer9 fer9";
+	gap: 5px;
+	background-color: $colHeader;
+}
+
+// $color_1: #F38BA0;
+ $font-family_1: 'Delicious Handrawn', cursive;
+
+.main-tratamientos1 {
+	grid-area: fer1;
+	justify-self: center;
+	align-self: center;
+	font-size: 40px;
+	font-family: $font-family_1;
+	color: $colVarios;
+}
+.main-tratamientos2 {
+	grid-area: fer2;
+	padding-left: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: auto;
+		height: auto;
+	}
+}
+.main-tratamientos3 {
+	grid-area: fer3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: auto;
+		height: auto;
+	}
+}
+.main-tratamientos4 {
+	grid-area: fer4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: auto;
+		height: auto;
+	}
+}
+.main-tratamientos5 {
+	grid-area: fer5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: auto;
+		height: auto;
+	}
+}
+.main-tratamientos6 {
+	grid-area: fer6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: auto;
+		height: auto;
+	}
+}
+.main-tratamientos7 {
+	grid-area: fer7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: auto;
+		height: auto;
+	}
+}
+.main-tratamientos {
+	figcaption {
+		display: flex;
+		justify-content: center;
+	}
+}
+.main-tratamientos8 {
+	grid-area: fer8;
+	justify-self: center;
+	align-self: flex-end;
+	font-size: 20px;
+	font-family: $font-family_1;
+	color: $colVarios;
+}
+.main-tratamientos9 {
+	grid-area: fer9;
+	width: 900px;
+	height: 120px;
+	border: 2px solid $colFooter;
+	display: flex;
+	align-self: center;
+	justify-self: center;
+	h3 {
+		text-align: center;
+		align-self: center;
+		font-size: 24px;
+	}
+}

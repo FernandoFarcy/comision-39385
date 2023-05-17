@@ -1,0 +1,114 @@
+@media(max-width:1024px){
+	.header {
+		grid-area: cabecera;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 50% 50%;
+		grid-template-areas: "headerarriba" "headerabajo";
+		gap: 5px;
+		figure {
+			grid-area: headerarriba;
+			justify-self: left;
+		}
+		ul {
+			grid-area: headerabajo;
+			list-style: none;
+			margin-top: 40px;
+			justify-content: left;
+			padding-left: 30px;
+			gap: 20PX;
+			li {
+				a {
+					padding: 5px 5px 5px 5px;
+					font-weight: bold;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.navbar{
+		li {
+			a {
+				&:hover {
+					color:$colVarios;
+					font-size: 24px;
+				}
+			}
+		}
+	}
+
+	.main-index {
+		display: grid;
+		grid-template-columns: repeat(5,1fr);
+		grid-template-rows: repeat(7, 1fr);
+		grid-template-areas: "fer2 fer2 fer2 fer1 fer1" "fer2 fer2 fer2 fer3 fer3" "fer2 fer2 fer2 fer3 fer3" "fer4 fer4 fer4 fer4 fer4" "fer5 fer5 fer5 fer5 fer5" "fer5 fer5 fer5 fer5 fer5" "fer6 fer6 fer6 fer6 fer6";
+	}
+	.main-index-uno {
+		justify-self: left;
+		align-self: center;
+		text-align: left;
+	}
+	.main-index-dos {
+		grid-area: fer2;
+		padding: 20px;
+		justify-self: center;
+		align-self: center;
+		border-radius: 50%;
+	}
+	.main-index-tres {
+		grid-area: fer3;
+		justify-self: center;
+		align-self: center;
+		text-align: center;
+		font-size: 18px;
+		font-family: $font-family_1;
+		width: 450px;
+		padding-right: 20px;
+	}
+	.main-index-cuatro {
+		grid-area: fer4;
+		text-align: center;
+		padding-left: 10px;
+		font-size: 18px;
+		font-family: $font-family_2;
+		color:$colVarios;
+	}
+	.main-index-cinco {
+		img {
+			grid-area: fer5;
+			width: 1000px;
+			height: 300px;
+			justify-self: center;
+			align-self: center;
+			text-align: center;
+			border: 2px solid $colFooter;
+		}
+	}
+	.main-index-seis {
+		grid-area: fer6;
+		justify-self: center;
+		align-self: self-start;
+		text-align: center;
+		font-size: 18px;
+		width: 1000px;
+		font-family: $font-family_1;
+	}
+	.footer-footer1 {
+		justify-content: center;
+	}
+	.footer-footer2 {
+		justify-content: center;
+		h3 {
+			padding-left: 120px;
+		}
+	}
+	.footer-footer3 {
+		display: block;
+		justify-content: center;
+		h3 {
+			padding-bottom: 10px;
+			padding-left: 50px;
+			justify-content: center;
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.header {
+	grid-area: cabecera;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: "headerizq headerder";
+	gap: 5px;
+	background-image: url(../assets/img/encabezado2.png);
+	background-size: cover;
+	figure {
+		grid-area: headerizq;
+		padding: 20px 0 0 20px;
+	}
+	ul {
+		grid-area: headerder;
+		display: flex;
+		list-style: none;
+		flex-direction: row;
+		justify-content: right;
+		margin-top: 130px;
+		padding-right: 40px;
+		gap: 20PX;
+		li {
+			a {
+				text-decoration: none;
+				font-size: 22px;
+				color:$colHeader;
+				font-family:$font-family_3;
+				&:hover {
+					color:$colVarios;
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}
+
+.navbar {
+	li {
+		a {
+			&:active {
+				color:rosybrown ;
+				font-size: 24px;
+			}
+		}
+	}
+}

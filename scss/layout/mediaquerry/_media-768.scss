@@ -1,0 +1,122 @@
+@media(max-width:768px){
+.footer-footer1 {
+	figure {
+		img {
+			width: 60px;
+			height: 70px;
+		}
+	}
+}
+
+.footer-footer2 {
+	figure {
+		.instagram {
+			width: 40px;
+			height: 40px;
+		}
+		.facebook {
+			width: 32px;
+			height: 32px;
+		}
+	}
+}
+
+
+.footer-footer3 {
+	figure {
+		.email {
+			width: 38px;
+			height: 27px;
+		}
+		.wts {
+			width: 40px;
+			height: 40px;
+		}
+	}
+}
+        /* ------ TRATAMIENTOS Media 768 */
+        
+        .main-tratamientos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            grid-template-areas: "fer1 fer1" "fer2 fer3" "fer2 fer3" "fer4 fer5" "fer4 fer5" "fer6 fer7" "fer6 fer7" "fer8 fer8" "fer9 fer9";
+            gap: 2px;
+            background-color:$colHeader;
+        }
+        .tratamientos-card {
+            width: 36rem;
+        }
+        .tratamientos-card-text {
+            width: 24rem;
+        }
+        .main-tratamientos1 {
+            grid-area: fer1;
+            justify-self: center;
+            align-self: center;
+            font-size: 20px;
+            font-family: $font-family_1;
+            color:$colVarios;
+        }
+        .main-tratamientos2 {
+            grid-area: fer2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-tratamientos3 {
+            grid-area: fer3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-tratamientos4 {
+            grid-area: fer4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-tratamientos5 {
+            grid-area: fer5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-tratamientos6 {
+            grid-area: fer6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-tratamientos7 {
+            grid-area: fer7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-tratamientos8 {
+            grid-area: fer8;
+            justify-self: center;
+            align-self: flex-end;
+            font-size: 15px;
+            font-family: $font-family_1;
+            color: $colVarios;
+        }
+        .main-tratamientos9 {
+            grid-area: fer9;
+            width: 700px;
+            height: auto;
+            border: 2px solid #FFBCBC;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            h3 {
+                text-align: center;
+                font-size: 22px;
+            }
+        }
+        .tratamientoTextoCard {
+            width: 34rem;
+            text-align: center;
+        }
+}

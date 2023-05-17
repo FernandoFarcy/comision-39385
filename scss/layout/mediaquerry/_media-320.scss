@@ -1,0 +1,27 @@
+@media(max-width:320px){
+
+    .tratamientos-card{
+        width: 26rem;
+    }
+    .tratamientos-card-text{
+        width: 20rem;
+    }
+    .main-tratamientos9{
+        grid-area: fer9;
+        width: 320px;
+        height: auto;
+        border: 2px solid $colFooter;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    .main-tratamientos9 h3{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .tratamientoTextoCard{
+        width: 25rem;
+        text-align: center;
+    }
+}
