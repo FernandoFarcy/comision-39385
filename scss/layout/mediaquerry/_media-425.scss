@@ -1,27 +1,27 @@
 @media (max-width:425px) {
-   .header{
-        figure{
-            grid-area: headerarriba;
-            justify-self:center;
-        }
-        ul{
-            grid-area: headerabajo;
-            list-style:none;
-            margin-top: 40px;
-            justify-content:center;
-            gap: 20px;
-            li{
-                a{
-                    padding: 5px;
-                    font-weight: bold;
-                    font-size: 20px; 
-                }
-            } 
-        }
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        position:fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: $colHeader;
+        transition: all 0.2s ease-in-out;
     }
-
+  
     
+        .menu li{margin-top:40px;}
+        .menu li a{padding: 10px;
+        color:$colVarios}
+        .open-menu, .close-menu{display:block;}
+        #check:checked ~ .menu{right: 0;}
 
+ 
     .main-index {
         display: grid;
         grid-template-columns: 100%;
@@ -177,20 +177,20 @@
     
     .main-tratamientos {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
         grid-template-rows: repeat(15, 1fr);
         grid-template-areas: "fer1" "fer2" "fer2" "fer3" "fer3" "fer4" "fer4" "fer5" "fer5" "fer6" "fer6" "fer7" "fer7" "fer8" "fer9";
         gap: 2px;
         background-color: $colHeader;
     }
     .tratamientos-card {
-        width: 24rem;
+        width: 20rem;
     }
     .tratamientos-card-text {
         width: 22rem;
     }
     .tratamientoTextoCard {
-        width: 22rem;
+        width: 18rem;
         text-align: center;
     }
     .main-tratamientos1 {
@@ -200,6 +200,7 @@
         font-size: 20px;
         font-family: $font-family_1;
         color: $colVarios;
+        text-align: center;
     }
     .main-tratamientos2 {
         grid-area: fer2;

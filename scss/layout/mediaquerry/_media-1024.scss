@@ -1,42 +1,4 @@
 @media(max-width:1024px){
-	.header {
-		grid-area: cabecera;
-		display: grid;
-		grid-template-columns: 100%;
-		grid-template-rows: 50% 50%;
-		grid-template-areas: "headerarriba" "headerabajo";
-		gap: 5px;
-		figure {
-			grid-area: headerarriba;
-			justify-self: left;
-		}
-		ul {
-			grid-area: headerabajo;
-			list-style: none;
-			margin-top: 40px;
-			justify-content: left;
-			padding-left: 30px;
-			gap: 20PX;
-			li {
-				a {
-					padding: 5px 5px 5px 5px;
-					font-weight: bold;
-					font-size: 20px;
-				}
-			}
-		}
-	}
-	.navbar{
-		li {
-			a {
-				&:hover {
-					color:$colVarios;
-					font-size: 24px;
-				}
-			}
-		}
-	}
-
 	.main-index {
 		display: grid;
 		grid-template-columns: repeat(5,1fr);

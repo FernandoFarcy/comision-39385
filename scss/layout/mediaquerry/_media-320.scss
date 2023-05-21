@@ -1,7 +1,26 @@
 @media(max-width:320px){
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        position:fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: $colHeader;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .menu li{margin-top:40px;}
+    .menu li a{padding: 10px;
+    color:$colVarios}
+    .open-menu, .close-menu{display:block;}
+    #check:checked ~ .menu{right: 0;}
 
     .tratamientos-card{
-        width: 26rem;
+        width: 20rem;
     }
     .tratamientos-card-text{
         width: 20rem;
@@ -21,7 +40,7 @@
     }
 
     .tratamientoTextoCard{
-        width: 25rem;
+        width: 18rem;
         text-align: center;
     }
 }

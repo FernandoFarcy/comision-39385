@@ -1,46 +1,71 @@
-.header {
-	grid-area: cabecera;
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-areas: "headerizq headerder";
-	gap: 5px;
+
+
+.nav-bar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
 	background-image: url(../assets/img/encabezado2.png);
-	background-size: cover;
-	figure {
-		grid-area: headerizq;
-		padding: 20px 0 0 20px;
+	padding: 12px 20px;
+}
+.logo {
+	img {
+		width: 100px;
 	}
-	ul {
-		grid-area: headerder;
-		display: flex;
-		list-style: none;
-		flex-direction: row;
-		justify-content: right;
-		margin-top: 130px;
-		padding-right: 40px;
-		gap: 20PX;
-		li {
-			a {
-				text-decoration: none;
-				font-size: 22px;
-				color:$colHeader;
-				font-family:$font-family_3;
-				&:hover {
-					color:$colVarios;
-					font-size: 24px;
+}
+.menu {
+	display: flex;
+	li {
+		padding-left: 30px;
+		a {
+			display: inline-block;
+			text-decoration: none;
+			color: $claro1;
+			text-align: center;
+			transition: 0.15s ease-in-out;
+			position: relative;
+			text-transform: uppercase;
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 0;
+				height: 2px;
+				background-color: $colVarios;
+				transition: 0.15s ease-in-out;
+			}
+			&:hover {
+				color:$colVarios;
+				&:after {
+					width: 100%;
+		
 				}
 			}
 		}
 	}
 }
+.open-menu , .close-menu {
+	position: absolute;
+	color: $colVarios;
+	cursor: pointer;
+	font-size: 1.5rem;
+	display: none;
 
-.navbar {
-	li {
-		a {
-			&:active {
-				color:rosybrown ;
-				font-size: 24px;
-			}
-		}
 	}
+
+.open-menu	{
+	top: 38px;
+	right: 20px;
+	transform: translateY(-50%);
+}
+
+
+.close-menu{
+	top: 20px;
+	right: 20px;
+}
+#check {
+	display: none;
 }
