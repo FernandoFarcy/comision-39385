@@ -91,12 +91,12 @@
         grid-area: pie;
         display: flex;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas: "f1" "f2" "f3";
         background-color: $colFooter;
         padding-top: 20px;
-        padding-left: 20px;
+        padding-left: 10px;
         color: $colVarios;
     }
     .footer-footer1 {
@@ -107,13 +107,13 @@
             display: flex;
             justify-items: center;
             img {
-                width: 90px;
-                height: 100px;
+                width: 75px;
+                height: 85px;
             }
         }
         figcaption {
             width: auto;
-            font-size: 22px;
+            font-size: 18px;
         }
     }
     .footer-footer2 {
@@ -127,14 +127,14 @@
         figure {
             .instagram {
                 grid-area: fer2;
-                width: 84px;
-                height: 84px;
+                width: 70px;
+                height: 70px;
                 justify-items: center;
             }
             .facebook {
                 grid-area: fer3;
-                width: 66px;
-                height: 66px;
+                width: 52px;
+                height: 52px;
                 justify-items: center;
                 align-self: center;
             }
@@ -153,18 +153,18 @@
             display: flex;
             flex-direction: row;
             .email {
-                width: 80px;
-                height: 54px;
+                width: 70px;
+                height: 44px;
             }
             .wts {
-                width: 74px;
-                height: 74px;
+                width: 64px;
+                height: 64px;
             }
             figcaption {
                 font-size: 22px;
-                padding-right: 10px;
+                padding-right: 5px;
                 p {
-                    font-size: 25px;
+                    font-size: 20px;
                 }
             }
         }
@@ -174,7 +174,9 @@
             }
         }
     }
-    
+    .suelafebo h6{
+        font-size: 9px;
+    }
     .main-tratamientos {
         display: grid;
         grid-template-columns: 100%;
