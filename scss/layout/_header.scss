@@ -15,7 +15,8 @@
 	}
 }
 .menu {
-	display: flex;
+	// display: flex;
+	@include flex(row,wrap,center,none,.5rem);
 	li {
 		padding-left: 30px;
 		a {

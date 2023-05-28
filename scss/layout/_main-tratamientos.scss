@@ -24,6 +24,7 @@
 	font-family: $font-family_1;
 	color: $colVarios;
 }
+
 .main-tratamientos2 {
 	grid-area: fer2;
 	padding-left: 10px;
@@ -36,54 +37,24 @@
 	}
 }
 .main-tratamientos3 {
+	@extend .main-tratamientos2;
 	grid-area: fer3;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	img {
-		width: auto;
-		height: auto;
-	}
 }
 .main-tratamientos4 {
+	@extend .main-tratamientos2;
 	grid-area: fer4;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	img {
-		width: auto;
-		height: auto;
-	}
 }
 .main-tratamientos5 {
+	@extend .main-tratamientos2;
 	grid-area: fer5;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	img {
-		width: auto;
-		height: auto;
-	}
 }
 .main-tratamientos6 {
+	@extend .main-tratamientos2;
 	grid-area: fer6;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	img {
-		width: auto;
-		height: auto;
-	}
 }
 .main-tratamientos7 {
+	@extend .main-tratamientos2;
 	grid-area: fer7;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	img {
-		width: auto;
-		height: auto;
-	}
 }
 .main-tratamientos {
 	figcaption {

@@ -27,7 +27,12 @@
   width: 100px; }
 
 .menu {
-  display: flex; }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: none;
+  gap: 0.5rem; }
   .menu li {
     padding-left: 30px; }
     .menu li a {
@@ -138,10 +143,12 @@
 .footer {
   grid-area: pie;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat 3 1fr;
   grid-template-rows: 80% 20%;
+  justify-content: none;
+  align-items: none;
   grid-template-areas: "f1 f2 f3" "f4 f4 f4";
-  gap: 3px;
+  gap: 0.1875rem;
   background-color: #FFBCBC;
   padding-top: 20px;
   padding-left: 20px;
@@ -273,60 +280,30 @@
   font-family: "Delicious Handrawn", cursive;
   color: #F38BA0; }
 
-.main-tratamientos2 {
+.main-tratamientos2, .main-tratamientos3, .main-tratamientos4, .main-tratamientos5, .main-tratamientos6, .main-tratamientos7 {
   grid-area: fer2;
   padding-left: 10px;
   display: flex;
   justify-content: center;
   align-items: center; }
-  .main-tratamientos2 img {
+  .main-tratamientos2 img, .main-tratamientos3 img, .main-tratamientos4 img, .main-tratamientos5 img, .main-tratamientos6 img, .main-tratamientos7 img {
     width: auto;
     height: auto; }
 
 .main-tratamientos3 {
-  grid-area: fer3;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .main-tratamientos3 img {
-    width: auto;
-    height: auto; }
+  grid-area: fer3; }
 
 .main-tratamientos4 {
-  grid-area: fer4;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .main-tratamientos4 img {
-    width: auto;
-    height: auto; }
+  grid-area: fer4; }
 
 .main-tratamientos5 {
-  grid-area: fer5;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .main-tratamientos5 img {
-    width: auto;
-    height: auto; }
+  grid-area: fer5; }
 
 .main-tratamientos6 {
-  grid-area: fer6;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .main-tratamientos6 img {
-    width: auto;
-    height: auto; }
+  grid-area: fer6; }
 
 .main-tratamientos7 {
-  grid-area: fer7;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .main-tratamientos7 img {
-    width: auto;
-    height: auto; }
+  grid-area: fer7; }
 
 .main-tratamientos figcaption {
   display: flex;
@@ -497,7 +474,7 @@
     font-size: 20px;
     font-family: "Delicious Handrawn", cursive;
     color: #F38BA0; }
-  .main-tratamientos2 {
+  .main-tratamientos2, .main-tratamientos3, .main-tratamientos4, .main-tratamientos5, .main-tratamientos6, .main-tratamientos7 {
     grid-area: fer2;
     display: flex;
     justify-content: center;
@@ -635,58 +612,6 @@
     padding-top: 20px;
     padding-left: 10px;
     color: #F38BA0; }
-  .footer-footer1 h3 {
-    display: none; }
-  .footer-footer1 figure {
-    display: flex;
-    justify-items: center; }
-    .footer-footer1 figure img {
-      width: 75px;
-      height: 85px; }
-  .footer-footer1 figcaption {
-    width: auto;
-    font-size: 18px; }
-  .footer-footer2 {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(1, 2fr);
-    grid-template-areas: "fer2 fer3"; }
-    .footer-footer2 h3 {
-      display: none; }
-    .footer-footer2 figure .instagram {
-      grid-area: fer2;
-      width: 70px;
-      height: 70px;
-      justify-items: center; }
-    .footer-footer2 figure .facebook {
-      grid-area: fer3;
-      width: 52px;
-      height: 52px;
-      justify-items: center;
-      align-self: center; }
-    .footer-footer2 figure figcaption {
-      display: none; }
-  .footer-footer3 {
-    display: flex;
-    flex-direction: column; }
-    .footer-footer3 h3 {
-      display: none; }
-    .footer-footer3 figure {
-      display: flex;
-      flex-direction: row; }
-      .footer-footer3 figure .email {
-        width: 70px;
-        height: 44px; }
-      .footer-footer3 figure .wts {
-        width: 64px;
-        height: 64px; }
-      .footer-footer3 figure figcaption {
-        font-size: 22px;
-        padding-right: 5px; }
-        .footer-footer3 figure figcaption p {
-          font-size: 20px; }
-    .footer-footer3 figcaption p {
-      letter-spacing: 2px; }
   .suelafebo h6 {
     font-size: 9px; }
   .main-tratamientos {
@@ -711,7 +636,7 @@
     font-family: "Delicious Handrawn", cursive;
     color: #F38BA0;
     text-align: center; }
-  .main-tratamientos2 {
+  .main-tratamientos2, .main-tratamientos3, .main-tratamientos4, .main-tratamientos5, .main-tratamientos6, .main-tratamientos7 {
     grid-area: fer2;
     display: flex;
     justify-content: center;
@@ -803,7 +728,7 @@
     font-size: 20px;
     font-family: "Delicious Handrawn", cursive;
     color: #F38BA0; }
-  .main-tratamientos2 {
+  .main-tratamientos2, .main-tratamientos3, .main-tratamientos4, .main-tratamientos5, .main-tratamientos6, .main-tratamientos7 {
     grid-area: fer2;
     display: flex;
     justify-content: center;

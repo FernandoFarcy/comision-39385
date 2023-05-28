@@ -1,10 +1,10 @@
 .footer {
 	grid-area: pie;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 80% 20%;
-	grid-template-areas: "f1 f2 f3" "f4 f4 f4";
-	gap: 3px;
+	@include grid(repeat 3 1fr,80% 20%,none,none,"f1 f2 f3""f4 f4 f4",.1875rem);
+	// display: grid;
+	// grid-template-columns: 1fr 1fr 1fr;
+	// grid-template-rows: 80% 20%;
+	// grid-template-areas: "f1 f2 f3" "f4 f4 f4";
 	background-color:$colFooter;
 	padding-top: 20px;
 	padding-left: 20px;

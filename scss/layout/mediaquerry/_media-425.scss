@@ -86,7 +86,7 @@
         font-family: $font-family_2;
     }
 
-
+//***********************************
     .footer {
         grid-area: pie;
         display: flex;
@@ -99,81 +99,7 @@
         padding-left: 10px;
         color: $colVarios;
     }
-    .footer-footer1 {
-        h3 {
-            display: none;
-        }
-        figure {
-            display: flex;
-            justify-items: center;
-            img {
-                width: 75px;
-                height: 85px;
-            }
-        }
-        figcaption {
-            width: auto;
-            font-size: 18px;
-        }
-    }
-    .footer-footer2 {
-        display: grid;
-        grid-template-columns: repeat(2,50%);
-        grid-template-rows: repeat(1, 2fr);
-        grid-template-areas: "fer2 fer3";
-        h3 {
-            display: none;
-        }
-        figure {
-            .instagram {
-                grid-area: fer2;
-                width: 70px;
-                height: 70px;
-                justify-items: center;
-            }
-            .facebook {
-                grid-area: fer3;
-                width: 52px;
-                height: 52px;
-                justify-items: center;
-                align-self: center;
-            }
-            figcaption {
-                display: none;
-            }
-        }
-    }
-    .footer-footer3 {
-        display: flex;
-        flex-direction: column;
-        h3 {
-            display: none;
-        }
-        figure {
-            display: flex;
-            flex-direction: row;
-            .email {
-                width: 70px;
-                height: 44px;
-            }
-            .wts {
-                width: 64px;
-                height: 64px;
-            }
-            figcaption {
-                font-size: 22px;
-                padding-right: 5px;
-                p {
-                    font-size: 20px;
-                }
-            }
-        }
-        figcaption {
-            p {
-                letter-spacing: 2px;
-            }
-        }
-    }
+ 
     .suelafebo h6{
         font-size: 9px;
     }
@@ -264,3 +190,5 @@
     
 
 }
+
+
